@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatores</title>
+</head>
+<body>
+  <h1>Cadastro de Fatores</h1>
+  <select name="Faotes" id="fatores">
+    <option value="Soldador">Soldador</option>
+    <option value="Solicitador" selected>Solicitador</option>
+    <option value="Solubilizador">Solubilizador</option>
+  </select>
+  <select name="Orixas" id="orixas">
+    <option value="Ogum">Ogum</option>
+    <option value="Oxossi" selected>Oxóssi</option>
+    <option value="Iansa">Iansã</option>
+    <option value="Oxum">Oxum</option>
+  </select>
+  <input type="text" name="acao" id="acao">
+  <button type="submit">Cadastrar</button>
+
+  <!-- Request Firebase -->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDJszmHTpPBLGBGpAOVO04_GAYYmrr1qXI",
+      authDomain: "fatores-divinos.firebaseapp.com",
+      databaseURL: "https://fatores-divinos.firebaseio.com",
+      projectId: "fatores-divinos",
+      storageBucket: "fatores-divinos.appspot.com",
+      messagingSenderId: "8824353730",
+      appId: "1:8824353730:web:59c7ed735c069ab3209c5b",
+      measurementId: "G-QLKFXTHD5B"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</body>
+</html>
